@@ -1,106 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-    <script src="https://kit.fontawesome.com/7e7c759816.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abas Shiekh | Front-End Developer</title>
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/7e7c759816.js" crossorigin="anonymous"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <p>Abas Shiekh</p>
-        </div>
-        <div class="nav-bar">
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>  
-        </div>
-        <div class="hero">
-            <h1>Mohd Abas Shiekh</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, animi.</p>
-            <a href="">Resume</a>
-        </div>
-    </header>
-    <main>
-        <section class="about-me" id="about">
-            <h1>About me</h1>
-            <div class="about-left">
-                <img src="">
-            </div>
-            <div class="about-right">
-                <h3>Summary</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae voluptate doloremque aspernatur ad dolores error eligendi dolorem modi, voluptatibus iure tempora, dicta iste perferendis, magni velit ipsa voluptas! Ad, quo.              </p>
-            </div>
-        </section>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <nav class="container nav">
+      <h1 class="logo">Abas Shiekh</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Skills sections -->
-         <section class="skills" id="skill">
-            <h3>Skills</h3>
-            <ul class="skill-list">
-                <li><i class="fa-brands fa-html5"></i>HTML</li>
-                <li><i class="fa-brands fa-css3"></i>CSS</li>
-                <li><i class="fa-brands fa-js"></i>JavaScript</li>
-                <li><i class="fa-brands fa-react"></i>React</li>
-                <li><i class="fa-brands fa-git"></i>Git</li>
-                
-            </ul>
+  <!-- Main Content -->
+  <main>
 
-         </section>
-         <!-- Projects sections -->
-          <section class="projects" id="projects">
-            <h3>Projects</h3>
-            <div class="project-card">
-                <img src="/img/proj-1.jpg">
-                <h4>Project 1</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, sunt!</p>
-                <a href="#">Link</a>
-            </div>
-            <div class="project-card">
-                <img src="/img/calculator.jpg">
-                <h4>Project 1</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, sunt!</p>
-                <a href="#">Link</a>
-            </div><div class="project-card">
-                <img src="/img/to-do-img.jpg">
-                <h4>Project 1</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, sunt!</p>
-                <a href="#">Link</a>
-            </div>
-          </section>
-          <!-- Contact section -->
-           <section class="contact" id="contact">
-            <h3>Contact</h3>
-            <div class="connect-me">
-                <h4>Connect me on Social Media</h4>
-                <ul class="social-links">
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-square-github"></i></li>
-                    <li><i class="fa-brands fa-researchgate"></i></li>
-                    <li><i class="fa-brands fa-square-facebook"></i></li>
-                    <li><i class="fa-brands fa-square-instagram"></i></li>
-                </ul>
-            </div>
-            <div class="message-me">
-                <h4>Reach out to me here...</h4>
-                <form>
-                    <input type="text" placeholder="Enter Your Name" required min="3" max="100">
-                    <input type="email" placeholder="Enter Your Email Id" required>
-                    <textarea placeholder="Enter Your Message here..." rows="5" cols="20" min="3" max="200"></textarea>
-                </form>
-            </div>
-           </section>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero">
+      <div class="container hero-container">
+        <div class="hero-img">
+          <img src="img/profile-pic.jpg" alt="Portrait of Abas Shiekh" />
+        </div>
+        <div class="hero-content">
+          <h2>Hi, I'm <span>Abas Shiekh</span></h2>
+          <p>Front-End Developer | JavaScript Enthusiast | UI/UX Explorer</p>
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
 
-    </main>
-    <!-- Footer Section -->
-     <footer>
-        <p>Copyright &copy; Abas</p>
-        <a href="#home">Back to Top</a>
-        <a href="https://www.github.com/abasshiekh" target="_blank">GitHub Link</a>
-     </footer>
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Me</h2>
+      <div class="container about-container">
+        
+        <div class="about-img">
+          <img src="img/profile-pic.jpg" alt="Abas working on laptop" class="about-img" />
+
+        </div>
+        
+      
+        <div class="about-text">
+          
+          <p>
+            I'm a passionate Front-End Developer skilled in building elegant, accessible, and responsive websites using modern web technologies. I love turning designs into interactive experiences.
+          </p>
+          
+        
+          <div class="skill-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Responsive Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Responsive Portfolio Website</h3>
+            <img src="img/proj-1.jpg" alt="Portfolio project screenshot" />
+            <p>A mobile-first personal website using HTML, CSS, and JavaScript.</p>
+            <a href="https://github.com/Abas_shiekh/portfolio" target="_blank" class="btn btn-secondary">View</a>
+          </article>
+          <article class="project-card">
+            <h3>To-Do List App</h3>
+            <img src="img/to-do-img.jpg" alt="To-Do App screenshot" />
+            <p>A sleek to-do list with local storage support and responsive design.</p>
+            <a href="https://github.com/Abas_shiekh/todo-app" target="_blank" class="btn btn-secondary">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume">
+      <div class="container">
+        <h2>Resume</h2>
+       
+        <p>
+          I have 5+ years of experience in IT, training, and front-end development. I specialize in building intuitive web applications and mentoring students in coding.
+        </p>
+         <a class="btn btn-primary" href="assets/Web_Mohd-Abas-Shiekh.pdf" download>Download My Resume</a>
+      </div>
+      <div class="resume-highlights">
+          <div class="highlight">
+            <h3>5+ Years</h3>
+            <p>Industry Experience</p>
+          </div>
+          <div class="highlight">
+            <h3>3+ Years</h3>
+            <p>Mentoring & Training</p>
+          </div>
+          <div class="highlight">
+            <h3>MCA</h3>
+            <p>Master's in Computer Applications</p>
+          </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="mailto:er.abasshiekh2014@gmail.com" method="post" enctype="text/plain">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Abas Shiekh. All rights reserved.</p>
+      <ul class="social-links">
+        <li><a href="https://github.com/Abas_shiekh" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://linkedin.com/in/abas-shiekh" target="_blank"><i class="fab fa-linkedin"></i> </a>LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
